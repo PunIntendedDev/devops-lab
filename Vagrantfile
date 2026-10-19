@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/jammy64"
+  config.vm.box = "eurolinux-vagrant/centos-stream-9 (virtualbox, 9.0.48, (amd64))"
   config.vm.hostname = "devops-vm"
 
   config.vm.network "forwarded_port", guest: 80, host: 8080
